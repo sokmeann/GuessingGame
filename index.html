@@ -2,6 +2,22 @@
 <html lang="en">
   <head>
   <link rel='stylesheet' type='text/css' href='style.css'>
+
+<!-- Bootstrap CDN start -->
+
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!-- Bootstrap CDN end -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Guessing Game</title>
   </head>
   <body>
@@ -10,37 +26,59 @@
 
         <div id='headers'>
           <!-- Title and subtitles! -->
-          <h1 class='center'>The Guessing Game</h1>
+          <h1 class='center'>Play The Guessing Game!</h1>
+          <h4 class='center'>Guess a number between 1 to 100</h2>
         </div>
 
         <div id='main'>
           <div id='input-parent'>
             <!-- Player's guess input, and submit button -->
-          </div>
+            <div id="guessinggame" class='container-fluid row'>
+            <div class='col-xs-4'>
+                <div id='guesses' class='list-unstyled list-inline'>
+                <!-- unordered list of guesses -->
+                <ul class="guess-list" align="right">
+                <li class='guess'><button id="Guess1" type="button" class="btn btn-info">---</button></li>
+                <li class='guess'><button id="Guess2" type="button" class="btn btn-info">---</button></li>
+                <li class='guess'><button id="Guess3" type="button" class="btn btn-info">---</button></li>
+                <li class='guess'><button id="Guess4" type="button" class="btn btn-info">---</button></li>
+                <li class='guess'><button id="Guess5" type="button" class="btn btn-info">---</button></li>
+                </ul>
+              </div>
+              </div>
+              <div class='col-xs-5'>
+                <div id="menu-btns">
+                <!-- reset and hint buttons -->
+                <input class="btn btn-default" type="submit" value="Reset">
+                <input class="btn btn-default" type="submit" value="Hint">
+                </div>
 
-          <div id='guesses'>
-            <!-- unordered list of guesses -->
-          </div>
+              </div>
+            <div class='col-xs-2'>
+            <input type="text" class="form-control" id="Guess" placeholder="What's your guess?" maxlength='3' autofocus=autofocus>
+            </div>
+            <div class='col-xs-1'>
+            <input class="btn btn-default" type="submit" value="Go!">
+            </div>
+          </div> <!-- container-fluid -->
+        </div> <!-- input-parent -->
+      </div> <!-- main -->
 
-          <div id="menu-btns">
-            <!-- reset and hint buttons -->
-          </div>
-        </div>
       </div>
 
 
 
     <div id='footer'>
-        <div>
-          <div class='logo'>
+        <div class='container-fluid row'>
+          <div class='logo FSA col-xs-4'>
             <img src='Images/FullstackAcademy.png'></img>
           </div>
 
-          <div class='logo'>
+          <div class='project col-xs-4'>
             <h4>Project by Sokmean Nou</h4>
           </div>
 
-          <div class='logo'>
+          <div class='logo GHA col-xs-4'>
             <img src='Images/GraceHopperAcademy.png'></img>
           </div>
 

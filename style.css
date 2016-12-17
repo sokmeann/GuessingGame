@@ -1,21 +1,53 @@
+html body{
+  background-color: rgba(255, 255, 255, 0);
+}
+html { 
+  background: url('images/GoldenGateBridge.png') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#headers h1, #headers h4 {
+  color: #FFFFFF;
+}
+#guessinggame {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 13%;
+}
+ul li {
+  display: inline;
+}
 .center {
   text-align: center;
+  background-color: transparent;
 }
-ul {
-  list-style: none;
-  padding: 0;
-}
-.logo {
+.logo{
     display: inline-block;
 }
-.logo img {
+.project{
+  display: inline-block;
+  text-align: center;
+  padding-top: 8px;
+}
+.FSA img {
   width: auto;
-  height: 65px;
+  height: 55px;
+  float: left;
+}
+.GHA img {
+  width: auto;
+  height: 43px;
+  padding-top: 5px;
+  float: right;
 }
 #footer {
   width: 100%;
-  border-top: solid 2px black;
   background-color: white;
+  padding: 20px 20px 20px 20px;
   position: fixed;
   bottom: 0;
 }
+
